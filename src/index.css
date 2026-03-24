@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Quicksand", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-butterfly-bg: #0F0F14;
+  --color-butterfly-primary: #7C6CF6;
+  --color-butterfly-accent: #FF4FD8;
+  --color-butterfly-highlight: #5EF2FF;
+  --color-butterfly-surface: #1A1A24;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-gray-200 antialiased bg-butterfly-bg;
+  }
+}
